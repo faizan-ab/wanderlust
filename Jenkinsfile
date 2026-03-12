@@ -62,9 +62,9 @@ pipeline {
                 --scan . \
                 --format HTML \
                 --out dependency-check-report \
+                --noupdate \
                 --disableAssembly \
-                --disableNodeAudit \
-                --noupdate
+                --disableNodeAudit
                 '''
             }
         }

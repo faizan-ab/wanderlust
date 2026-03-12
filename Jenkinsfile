@@ -57,14 +57,12 @@ pipeline {
         stage('OWASP: Dependency check') {
             steps {
                 sh '''
-                /opt/dependency-check/bin/dependency-check.sh \
-                --project wanderlust \
-                --scan . \
+                docker run --rm \
+                -v $(pwd):/src \
+                owasp/dependency-check:latest \
+                --scan /src \
                 --format HTML \
-                --out dependency-check-report \
-                --noupdate \
-                --disableAssembly \
-                --disableNodeAudit
+                --out /src/dependency-check-report
                 '''
             }
         }

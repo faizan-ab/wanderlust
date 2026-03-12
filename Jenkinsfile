@@ -56,7 +56,14 @@ pipeline {
 
         stage('OWASP: Dependency check') {
             steps {
-                sh '/opt/dependency-check/bin/dependency-check.sh --project test --scan . --format HTML --out dependency-check-report'
+                sh '''
+                /opt/dependency-check/bin/dependency-check.sh \
+                --project wanderlust \
+                --scan . \
+                --format HTML \
+                --out dependency-check-report \
+                --nvdApiKey YOUR_API_KEY
+                '''
             }
         }
         

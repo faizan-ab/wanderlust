@@ -36,6 +36,15 @@ pipeline {
                 }
             }
         }
+
+        stage('debug') {
+            steps {
+                sh 'whoami'
+                sh 'hostname'
+                sh 'ls /opt'
+                sh 'ls /opt/dependency-check/bin'
+            }
+        }
         
         stage("Trivy: Filesystem scan"){
             steps{
@@ -114,14 +123,6 @@ pipeline {
                     docker_push("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","faizanab")
                 }
             }
-        }
-    }
-        stage('debug') {
-            steps {
-                sh 'whoami'
-                sh 'hostname'
-                sh 'ls /opt'
-                sh 'ls /opt/dependency-check/bin'
         }
     }
     post{

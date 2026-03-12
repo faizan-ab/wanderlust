@@ -54,11 +54,9 @@ pipeline {
             }
         }
 
-        stage("OWASP: Dependency check"){
-            steps{
-                script{
-                    owasp_dependency()
-                }
+        stage('OWASP: Dependency check') {
+            steps {
+                sh '/opt/dependency-check/bin/dependency-check.sh --project test --scan . --format HTML --out dependency-check-report'
             }
         }
         

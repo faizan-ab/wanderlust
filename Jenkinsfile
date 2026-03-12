@@ -62,7 +62,10 @@ pipeline {
                 --scan . \
                 --format HTML \
                 --out dependency-check-report \
-                --nvdApiKey YOUR_API_KEY
+                --nvdApiKey YOUR_API_KEY \
+                --nvdApiDelay 6000 \
+                --disableAssembly \
+                --noupdate
                 '''
             }
         }

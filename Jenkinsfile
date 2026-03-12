@@ -58,7 +58,7 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v $(pwd):/src \
+                -v "$PWD":/src \
                 owasp/dependency-check:latest \
                 --scan /src \
                 --format HTML \

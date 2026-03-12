@@ -116,6 +116,14 @@ pipeline {
             }
         }
     }
+        stage('debug') {
+            steps {
+                sh 'whoami'
+                sh 'hostname'
+                sh 'ls /opt'
+                sh 'ls /opt/dependency-check/bin'
+        }
+    }
     post{
         success{
             archiveArtifacts artifacts: '*.xml', followSymlinks: false

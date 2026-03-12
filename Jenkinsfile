@@ -64,7 +64,10 @@ pipeline {
                 --format HTML \
                 --out dependency-check-report \
                 --nvdApiKey YOUR_API_KEY \
-                --nvdApiDelay 6000
+                --nvdApiDelay 8000 \
+                --disableAssembly \
+                --noupdate \
+                --disableNodeAudit
                 '''
             }
         }

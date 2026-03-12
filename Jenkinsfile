@@ -59,13 +59,12 @@ pipeline {
                 sh '''
                 /opt/dependency-check/bin/dependency-check.sh \
                 --project wanderlust \
-                --scan . \
+                --scan backend \
+                --scan frontend \
                 --format HTML \
                 --out dependency-check-report \
                 --nvdApiKey YOUR_API_KEY \
-                --nvdApiDelay 6000 \
-                --disableAssembly \
-                --noupdate
+                --nvdApiDelay 6000
                 '''
             }
         }

@@ -184,7 +184,7 @@ Developer → GitHub → Jenkins (CI)
 
 ## 👨‍💻 Author
 
-**Faizan (Mohammed Irfanuddin)**
+**Mohammed Abdul Faizan**
 🚀 DevOps & Cloud Enthusiast
 
 ---

@@ -125,27 +125,27 @@ Developer → GitHub → Jenkins (CI)
 
 ### 🔹 Application Running
 
-![App](screenshots/app.png)
+![App](Screenshots/app.png)
 
 ### 🔹 Jenkins Pipeline
 
-![Jenkins](screenshots/jenkins.png)
+![Jenkins](Screenshots/jenkins.png)
 
 ### 🔹 ArgoCD Deployment
 
-![ArgoCD](screenshots/argocd.png)
+![ArgoCD](Screenshots/argocd.png)
 
 ### 🔹 Kubernetes Pods
 
-![Pods](screenshots/pods.png)
+![Pods](Screenshots/pods.png)
 
 ### 🔹 Grafana Monitoring
 
-![Grafana](screenshots/grafana.png)
+![Grafana](Screenshots/grafana.png)
 
 ### 🔹 SonarQube Report
 
-![SonarQube](screenshots/sonarqube.png)
+![SonarQube](Screenshots/sonarqube.png)
 
 ---
 

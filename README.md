@@ -38,7 +38,7 @@ It automates the complete lifecycle from:
 
 ### 🔹 Architecture Diagram
 
-![Architecture](Screenshots/DevSecOps pipeline diagram on AWS EKS.png)
+![Architecture](Screenshots/DevSecOps-Pipeline-diagram-on-AWS-EKS.png.png)
 
 ### 🔹 Architecture Flow
 ```
